@@ -86,13 +86,13 @@ StreamScan</h1>
                      
                      <div className='flex'>
                       {service.service === 'prime' && (
-                        <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="48" height="48" src="https://img.icons8.com/color/48/amazon-prime-video.png" alt="amazon-prime-video"/></a>    )}
+                        <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="48" height="48" src="https://img.icons8.com/fluency/48/amazon-prime-video.png" alt="amazon-prime-video"/></a>    )}
     {service.service === 'netflix' && (
       <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="48" height="48" src="https://img.icons8.com/color/48/netflix.png" alt="netflix"/></a>    )}
           {service.service === 'hotstar' && (
       <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="32" height="32" src="https://img.icons8.com/small/32/disney-hotstar.png" alt="disney-hotstar"/></a>    )}
                 {service.service === 'apple' && (
-      <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="48" height="48" src="https://img.icons8.com/ios-filled/48/apple-tv.png" alt="apple-tv"/></a>    )}
+      <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="48" height="48" src="https://img.icons8.com/fluency/48/apple-tv.png" alt="apple-tv"/></a>    )}
       {service.service === 'zee5' && (
       <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="75" height="55" src="https://logos-world.net/wp-content/uploads/2021/11/ZEE5-Logo.png" alt="zee5"/></a>    )}
                       {/* <span>{service.service}</span> */}

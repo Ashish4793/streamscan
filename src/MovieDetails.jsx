@@ -69,7 +69,7 @@ StreamScan</h1>
         <div className="card bg-secondary mb-5 h-100" style={{width: '100%'}}>
           <div className="row g-0">
             <div className="col-sm-4 position-relative">
-              <a><img style={{width:400 , height : 400}} src={imageUrl} className="card-img fit-cover h-100 w-100" alt="..." />
+              <a href='/'><img style={{width:400 , height : 400}} src={imageUrl} className="card-img fit-cover h-100 w-100" alt="..." />
               </a>
             </div>
             <div className="col-sm-8">

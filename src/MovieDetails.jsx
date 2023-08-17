@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import Logo from './logo.png'
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
@@ -15,31 +15,33 @@ const MovieDetails = () => {
 
   console.log(imageUrl);
 
-  const [movie , setMovie] = useState([]);
+  const [movie , setMovie] = useState([null]);
 
-  const getStreamAvailability = async () => {
+  const getStreamAvailability = useCallback( async () => {
     const url = `https://streaming-availability.p.rapidapi.com/get?output_language=en&imdb_id=${id}`;
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '10ddaa8eabmsh21cb5bd3582dd1ap130990jsna6528ce6236e',
+		'X-RapidAPI-Key': '13ed3f0fbemsh44f0ea7afbe4615p16ceb7jsnfce2100a7d8e',
 		'X-RapidAPI-Host': 'streaming-availability.p.rapidapi.com'
 	}
 };
 
 
 try {
+  console.log("yes");
 	const response = await fetch(url, options);
 	const result = await response.json();
+  console.log(result);
   setMovie(result.result);
 } catch (error) {
 	console.error(error);
 }
-  }
+  } , [id]);
 
   useEffect(() => {
     getStreamAvailability();
-  } ,[]);
+  } ,[getStreamAvailability]);
 
   if (movie.title === undefined) {
     return <div>

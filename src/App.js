@@ -33,7 +33,7 @@ function App() {
 <Route exact path="/" element={
   <div className="app">
     <div>
-    <h1 className="display-5"><img width={60} height={60} src={Logo} alt="logo"/>
+    <h1 className="bold "><img width={60} height={60} src={Logo} alt="logo"/>
 StreamScan</h1>
 <p className="tagline mt-3">"Find. Stream. Enjoy. StreamScan Does It All."
 </p>

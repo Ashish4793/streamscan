@@ -1,0 +1,27 @@
+<p className='mt-3 lightFont avail'>Streaming Availability</p>
+                <div>
+                {movie && movie.streamingInfo && (
+      Object.keys(movie.streamingInfo).length > 0 && Array.isArray(movie.streamingInfo.in) && movie.streamingInfo.in.length > 0 ? (
+      movie.streamingInfo.in.map((service) => (
+                     
+                     <div className='flex'>
+                      {service.service === 'prime' && (
+                        <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="48" height="48" src="https://img.icons8.com/fluency/48/amazon-prime-video.png" alt="amazon-prime-video"/></a>    )}
+    {service.service === 'netflix' && (
+      <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="48" height="48" src="https://img.icons8.com/color/48/netflix.png" alt="netflix"/></a>    )}
+          {service.service === 'hotstar' && (
+      <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="32" height="32" src="https://img.icons8.com/small/32/disney-hotstar.png" alt="disney-hotstar"/></a>    )}
+                {service.service === 'apple' && (
+      <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="48" height="48" src="https://img.icons8.com/fluency/48/apple-tv.png" alt="apple-tv"/></a>    )}
+      {service.service === 'zee5' && (
+      <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="75" height="55" src="https://logos-world.net/wp-content/uploads/2021/11/ZEE5-Logo.png" alt="zee5"/></a>    )}
+                      {/* <span>{service.service}</span> */}
+                     </div>
+
+                    ))
+                    ) : (
+                      <p style={{color : 'red'}}>No streaming data available.</p>
+                    ))}
+                  
+
+                </div>

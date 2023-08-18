@@ -50,9 +50,7 @@ h1 {
   font-size: 3vh;
 }
 
-.flex{
-  display: inline-flex;
-}
+
 
 .rightMargin{
   margin-right: 15px;
@@ -198,6 +196,36 @@ h1 {
   opacity: 1;
 }
 
+
+
+.movieCard{
+  border-radius: 20px !important;
+  background-color: #171717 !important;
+
+}
+
+.lightFont{
+  color: #FAFAFA !important;
+}
+
+.pill{
+  margin-right: 10px !important;
+}
+
+.plot{
+  font-style: italic;
+}
+
+.flex{
+  display: inline-flex !important;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+
+
 @media screen and (max-width: 600px) {
   .app {
     padding: 4rem 2rem;
@@ -236,3 +264,4 @@ h1 {
     margin: 1rem;
   }
 }
+

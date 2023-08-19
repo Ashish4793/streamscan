@@ -87,13 +87,13 @@ StreamScan</h1>
         <div className="shadow card movieCard mb-5" style={{width: '100%'}}>
           <div className="row g-0">
             <div className="col-sm-4 position-relative">
-              <a href={movieInfo.Poster}><img style={{width:300 , height : 300}} src={imageUrl} className="card-img h-100 w-100 " alt="..." />
+              <a target='_blank' rel='noreferrer' href={`https://www.imdb.com/title/${id}`}><img style={{width:300 , height : 300}} src={imageUrl} className="card-img h-100 w-100 " alt="..." />
               </a>
             </div>
             <div className="col-sm-8">
               <div className="card-body">
                 <div>
-                <h2 className="card-title text-center mb-3 lightFont plot movieTitle display-5">
+                <h2 className="card-title text-center mt-2 mb-4 lightFont movieTitle display-5">
                   {movieInfo.Title} <br />
                 </h2>
                 <p className='plot lightFont'>{movieInfo.Plot}</p>
@@ -102,13 +102,13 @@ StreamScan</h1>
                 <span className="badge pill rounded-pill bg-primary">{genre}</span>
                 ))}
                 <p className='lightFont' style={{float : 'right'}}><img width="40" height="40" src="https://img.icons8.com/color/40/imdb.png" alt="imdb"/> <br></br> {movieInfo.imdbRating}/10 </p>
-                <p className='lightFont mt-5'>Release Date : {movieInfo.Released}</p>
+                <p className='lightFont mt-4'>Release Date : {movieInfo.Released}</p>
                 <p className='lightFont mt-3'>Directors : {movieInfo.Director}</p>
                 <p className='lightFont mt-3'>Cast : {movieInfo.Actors}</p>
                 {movieInfo && movieInfo.Type === 'series' && (
-                <span className="badge pill rounded-pill bg-danger mt-2">Number of seasons : {movieInfo.totalSeasons}</span>
-    )}
-                <p className='mt-3 lightFont avail'>Streaming Availability</p>
+                <span className="badge pill rounded-pill bg-danger mt-2">Number of seasons : {movieInfo.totalSeasons}</span>)}
+                <br></br>
+                <h1 className='mt-3 lightFont avail'>Streaming Availability</h1>
   <div style={{ display: 'flex' }}>
     {movie && movie.streamingInfo && (
       Object.keys(movie.streamingInfo).length > 0 && Array.isArray(movie.streamingInfo.in) && movie.streamingInfo.in.length > 0 ? (
@@ -124,20 +124,19 @@ StreamScan</h1>
     {service.service === 'netflix' && (
       <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="48" height="48" src="https://img.icons8.com/color/48/netflix.png" alt="netflix"/></a>    )}
           {service.service === 'hotstar' && (
-      <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="32" height="32" src="https://img.icons8.com/small/32/disney-hotstar.png" alt="disney-hotstar"/></a>    )}
+      <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="48" height="48" src="https://img.icons8.com/fluency/48/disney-plus.png" alt="disney-hotstar"/></a>    )}
                 {service.service === 'apple' && (
       <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="48" height="48" src="https://img.icons8.com/fluency/48/apple-tv.png" alt="apple-tv"/></a>    )}
       {service.service === 'zee5' && (
       <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="50" height="45" src="https://logos-world.net/wp-content/uploads/2021/11/ZEE5-Emblem.png" alt="zee5"/></a>    )}
-                      {/* <span>{service.service}</span> */}
                 </div>
               );
             }
-            return null; // Skip duplicate service icons
+            return null; 
           });
         })()
       ) : (
-        <p>No streaming data available.</p>
+        <p style={{color : 'red'}}>No streaming data available.</p>
       )
     )}
   </div>

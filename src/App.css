@@ -219,7 +219,9 @@ h1 {
 .flex{
   display: inline-flex !important;
 }
-
+.hue{
+  font-size: 13px !important;
+}
 .bold{
   font-weight: bold;
 }

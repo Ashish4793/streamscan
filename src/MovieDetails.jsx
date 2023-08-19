@@ -93,9 +93,23 @@ StreamScan</h1>
             <div className="col-sm-8">
               <div className="card-body">
                 <div>
+                
                 <h2 className="card-title text-center mt-2 mb-4 lightFont movieTitle display-5">
                   {movieInfo.Title} <br />
                 </h2>
+                {(() => {
+                    const inputString = movieInfo.Awards;
+                    const regex = /Won (\d+) Oscar(s?)/;
+                    const match = inputString.match(regex);
+
+                    if (match) {
+                        const number = parseInt(match[1]);
+                        const plural = match[2] === "s" ? "s" : "";
+                        return (
+                            <p className='lightFont'><img width="35" height="35" src="https://img.icons8.com/emoji/35/trophy-emoji.png" alt="trophy-emoji"/> Won {number} Oscar{plural}!</p>
+                        );
+                    }
+                })()}
                 <p className='plot lightFont'>{movieInfo.Plot}</p>
                 
                 {(movieInfo.Genre).split(', ').map((genre, index) => (
@@ -108,7 +122,7 @@ StreamScan</h1>
                 {movieInfo && movieInfo.Type === 'series' && (
                 <span className="badge pill rounded-pill bg-danger mt-2">Number of seasons : {movieInfo.totalSeasons}</span>)}
                 <br></br>
-                <h1 className='mt-3 lightFont avail'>Streaming Availability</h1>
+                <h1 className='mt-4 lightFont avail'>Streaming Availability</h1>
   <div style={{ display: 'flex' }}>
     {movie && movie.streamingInfo && (
       Object.keys(movie.streamingInfo).length > 0 && Array.isArray(movie.streamingInfo.in) && movie.streamingInfo.in.length > 0 ? (

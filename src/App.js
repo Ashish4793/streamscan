@@ -71,7 +71,7 @@ StreamScan</h1>
 </div>
 } />
       
-      <Route path="/movie/:id/" element={<MovieDetails />} />
+      <Route path="/title/:id/" element={<MovieDetails />} />
     </Routes>
       
     

@@ -2,13 +2,9 @@ import React, { useCallback, useState, useEffect } from 'react';
 import Logo from './logo.png';
 import { useParams } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useLocation } from 'react-router-dom';
 
 const MovieDetails = () => {
   const { id } = useParams();
-  const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
-  const imageUrl = searchParams.get('imageUrl');
 
   const [movie, setMovie] = useState(null);
   const [movieInfo, setMovieInfo] = useState([]);
@@ -87,7 +83,7 @@ StreamScan</h1>
         <div className="shadow card movieCard mb-5" style={{width: '100%'}}>
           <div className="row g-0">
             <div className="col-sm-4 position-relative">
-              <a target='_blank' rel='noreferrer' href={`https://www.imdb.com/title/${id}`}><img style={{width:300 , height : 300}} src={imageUrl} className="card-img h-100 w-100 " alt="..." />
+              <a target='_blank' rel='noreferrer' href={`https://www.imdb.com/title/${id}`}><img style={{width:300 , height : 300}} src={movieInfo.Poster} className="card-img h-100 w-100 " alt="..." />
               </a>
             </div>
             <div className="col-sm-8">

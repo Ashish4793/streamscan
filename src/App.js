@@ -35,7 +35,7 @@ function App() {
     <div>
     <h1 className="bold "><img width={60} height={60} src={Logo} alt="logo"/>
 StreamScan</h1>
-<p className="tagline mt-3">"Find. Stream. Enjoy. StreamScan Does It All."
+<p className="tagline mt-3">"Find. Stream. Enjoy."
 </p>
       </div>  
   <div className="search">

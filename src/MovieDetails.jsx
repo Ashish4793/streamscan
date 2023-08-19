@@ -56,7 +56,7 @@ const MovieDetails = () => {
     return (
       <div className='text-center mt-5'>
         <h1 className="bold mt-5"><img width={60} height={60} src={Logo} alt="logo" />StreamScan</h1>
-        <p className="tagline mt-3">"Find. Stream. Enjoy. StreamScan Does It All."</p>
+        <p className="tagline mt-3">"Find. Stream. Enjoy."</p>
         <h1 className='text-center mt-5'>Please wait fetching data ...</h1>
       </div>
     );
@@ -66,7 +66,7 @@ const MovieDetails = () => {
     return (
       <div className='text-center mt-5'>
         <h1 className="bold mt-5"><img width={60} height={60} src={Logo} alt="logo" />StreamScan</h1>
-        <p className="tagline mt-3">"Find. Stream. Enjoy. StreamScan Does It All."</p>
+        <p className="tagline mt-3">"Find. Stream. Enjoy."</p>
         <h1 className='text-center mt-5'>Failed to fetch movie details. Please try again later.</h1>
       </div>
     );
@@ -79,7 +79,7 @@ const MovieDetails = () => {
     <h1 style={{margin:20}} className="bold"><img width={60} height={60} src={Logo} alt="logo"/>
 StreamScan</h1>
     </a>
-<p className="tagline mt-3">"Find. Stream. Enjoy. StreamScan Does It All."
+<p className="tagline mt-3">"Find. Stream. Enjoy."
 </p>
 
       </div>

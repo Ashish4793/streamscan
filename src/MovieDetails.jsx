@@ -55,8 +55,8 @@ const MovieDetails = () => {
   if (isLoading) {
     return (
       <div className='text-center mt-5'>
-        <h1 className="bold mt-5"><img width={60} height={60} src={Logo} alt="logo" />StreamScan</h1>
-        <p className="tagline mt-3">"Find. Stream. Enjoy."</p>
+        <h1 className="bold text-center mt-5"><img width={60} height={60} src={Logo} alt="logo" />StreamScan</h1>
+        <p className="tagline text-center mt-3">"Find. Stream. Enjoy."</p>
         <h1 className='text-center mt-5'>Please wait fetching data ...</h1>
       </div>
     );
@@ -65,8 +65,8 @@ const MovieDetails = () => {
   if (!movie || movie.title === undefined) {
     return (
       <div className='text-center mt-5'>
-        <h1 className="bold mt-5"><img width={60} height={60} src={Logo} alt="logo" />StreamScan</h1>
-        <p className="tagline mt-3">"Find. Stream. Enjoy."</p>
+        <h1 className="bold mt-5 text-center"><img width={60} height={60} src={Logo} alt="logo" />StreamScan</h1>
+        <p className="tagline text-center mt-3">"Find. Stream. Enjoy."</p>
         <h1 className='text-center mt-5'>Failed to fetch movie details. Please try again later.</h1>
       </div>
     );
@@ -76,10 +76,10 @@ const MovieDetails = () => {
     <div className="movie-details">
       <div className='text-center'>
     <a className='noUnderline' href="/">
-    <h1 style={{margin:20}} className="bold"><img width={60} height={60} src={Logo} alt="logo"/>
+    <h1 style={{margin:20}} className="text-center bold"><img width={60} height={60} src={Logo} alt="logo"/>
 StreamScan</h1>
     </a>
-<p className="tagline mt-3">"Find. Stream. Enjoy."
+<p className="tagline text-center mt-3">"Find. Stream. Enjoy."
 </p>
 
       </div>

@@ -19,7 +19,7 @@ const MovieDetails = () => {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '3f6809c016msh6e3cd334e82a504p1608e6jsn2e500d0c83ec',
+        'X-RapidAPI-Key': '10ddaa8eabmsh21cb5bd3582dd1ap130990jsna6528ce6236e',
         'X-RapidAPI-Host': 'streaming-availability.p.rapidapi.com'
       }
     };

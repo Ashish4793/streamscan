@@ -20,7 +20,7 @@ const MovieCard = ({ movie }) => {
           <div>
             <span>{movie.Type}</span>
             <h3>{movie.Title}</h3>
-            <Link style={linkStyle} to={{pathname :  `/movie/${movie.imdbID}/` ,  search: `?imageUrl=${movie.Poster}` }}>Streaming Info</Link>
+            <Link style={linkStyle} to={{pathname :  `/movie/${movie.imdbID}/` ,  search: `?imageUrl=${movie.Poster}` }}>More Info</Link>
 
           </div>
           

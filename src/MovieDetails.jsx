@@ -138,7 +138,7 @@ StreamScan</h1>
                 {service.service === 'apple' && (
       <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="48" height="48" src="https://img.icons8.com/fluency/48/apple-tv.png" alt="apple-tv"/></a>    )}
       {service.service === 'zee5' && (
-      <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="50" height="45" src="https://logos-world.net/wp-content/uploads/2021/11/ZEE5-Emblem.png" alt="zee5"/></a>    )}
+      <a target='_blank' rel='noreferrer' href={service.link}><img className='rightMargin' width="40" height="40" src="https://www.zee5.com/images/ZEE5_logo.svg?ver=3.12.10" alt="zee5"/></a>    )}
                 </div>
               );
             }

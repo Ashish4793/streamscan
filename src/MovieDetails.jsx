@@ -2,6 +2,8 @@ import React, { useCallback, useState, useEffect } from 'react';
 import Logo from './logo.png';
 import { useParams } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Skeleton , { SkeletonTheme } from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const MovieDetails = () => {
   const { id } = useParams();
@@ -52,8 +54,12 @@ const MovieDetails = () => {
     return (
       <div className='text-center mt-5'>
         <h1 className="bold text-center mt-5"><img width={60} height={60} src={Logo} alt="logo" />StreamScan</h1>
-        <p className="tagline text-center mt-3">"Find. Stream. Enjoy."</p>
-        <h1 className='text-center mt-5'>Please wait fetching data ...</h1>
+        <p className="tagline text-center mt-7">"Find. Stream. Enjoy."</p>
+        <SkeletonTheme baseColor="#202020" highlightColor="#8e8e8e">
+    <h1 className='mt-5'>
+      <Skeleton className='responsive-skeleton' width={500} count={8} />
+    </h1>
+  </SkeletonTheme>
       </div>
     );
   }
@@ -63,7 +69,7 @@ const MovieDetails = () => {
       <div className='text-center mt-5'>
         <h1 className="bold mt-5 text-center"><img width={60} height={60} src={Logo} alt="logo" />StreamScan</h1>
         <p className="tagline text-center mt-3">"Find. Stream. Enjoy."</p>
-        <h1 className='text-center mt-5'>Failed to fetch movie details. Please try again later.</h1>
+        <h1 style={{color : 'red'}} className='text-center mt-5'>Failed to fetch movie details. Please try again later.</h1>
       </div>
     );
   }

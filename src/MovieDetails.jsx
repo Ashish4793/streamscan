@@ -57,7 +57,7 @@ const MovieDetails = () => {
         <p className="tagline text-center mt-7">"Find. Stream. Enjoy."</p>
         <SkeletonTheme baseColor="#202020" highlightColor="#8e8e8e">
     <h1 className='mt-5'>
-      <Skeleton className='responsive-skeleton' width={window.innerWidth < 500 ? 300 : 400} height={50} count={6} />
+      <Skeleton className='responsive-skeleton' width={window.innerWidth < 700 ? 300 : 700} height={50} count={6} />
     </h1>
   </SkeletonTheme>
       </div>

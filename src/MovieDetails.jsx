@@ -17,7 +17,7 @@ const MovieDetails = () => {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '10ddaa8eabmsh21cb5bd3582dd1ap130990jsna6528ce6236e',
+        'X-RapidAPI-Key': '3f6809c016msh6e3cd334e82a504p1608e6jsn2e500d0c83ec',
         'X-RapidAPI-Host': 'streaming-availability.p.rapidapi.com'
       }
     };
@@ -57,7 +57,7 @@ const MovieDetails = () => {
         <p className="tagline text-center mt-7">"Find. Stream. Enjoy."</p>
         <SkeletonTheme baseColor="#202020" highlightColor="#8e8e8e">
     <h1 className='mt-5'>
-      <Skeleton className='responsive-skeleton' width={500} count={8} />
+      <Skeleton className='responsive-skeleton' width={window.innerWidth < 500 ? 300 : 400} height={50} count={6} />
     </h1>
   </SkeletonTheme>
       </div>

@@ -117,7 +117,7 @@ StreamScan</h1>
                 {(movieInfo.Genre).split(', ').map((genre, index) => (
                 <span className="badge pill rounded-pill bg-primary">{genre}</span>
                 ))}
-                <p className='lightFont' style={{float : 'right'}}><img width="40" height="40" src="https://img.icons8.com/color/40/imdb.png" alt="imdb"/> <br></br> {movieInfo.imdbRating}/10 </p>
+                <p className='lightFont' style={{float : 'right'}}><img width="50" height="30" src="../assets/img/imdb-icon.svg" alt="imdb"/> <br></br> {movieInfo.imdbRating}/10 </p>
                 <p className='lightFont mt-4'>Release Date : {movieInfo.Released}</p>
                 <p className='lightFont mt-3'>Directors : {movieInfo.Director}</p>
                 <p className='lightFont mt-3'>Cast : {movieInfo.Actors}</p>

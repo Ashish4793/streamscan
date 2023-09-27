@@ -31,5 +31,5 @@ Technologies used in the project:
 *   JavaScript
 *   React.js
 *   Bootstrap
-*   OMDb API
+*   <a href='https://www.omdbapi.com/'>OMDb API</a>
 *   Streaming Availabilty API

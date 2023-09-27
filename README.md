@@ -8,7 +8,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://ashish-kumar1.netlify.app/assets/img/streamscan.webp" alt="project-screenshot" width="400" height="400/">
+<img src="https://ashish-kumar1.netlify.app/assets/img/streamscan.webp" alt="project-screenshot" width="600" height="400/">
 
   
   

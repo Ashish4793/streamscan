@@ -31,5 +31,5 @@ Technologies used in the project:
 *   JavaScript
 *   React.js
 *   Bootstrap
-*   <a target='_blank' href='https://www.omdbapi.com/'>OMDb API</a>
-*   <a target='_blank' href='https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability/details'>Streaming Availabilty API</a>
+*   <a target='blank' href='https://www.omdbapi.com/'>OMDb API</a>
+*   <a target='blank' href='https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability/details'>Streaming Availabilty API</a>
